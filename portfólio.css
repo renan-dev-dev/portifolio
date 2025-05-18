@@ -8,10 +8,10 @@
 }
 
 body {
-  background-image: url('./imagem/macbook-pro-apple-m1-multicolor-pink-glossy-stock-5k-3840x2160-4039 (1) (1).jpg');
+  background-image: url("./imagem/macbook-pro-apple-m1-multicolor-pink-glossy-stock-5k-3840x2160-4039 (1) (1).jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;   
+  background-position: center;
   color: aliceblue;
   height: 100vh;
 }
@@ -33,10 +33,9 @@ header {
   backdrop-filter: blur(7px);
 }
 
-header .sticky{
-  border-bottom: .1rem solid rgba(255, 69, 0, 0.7);
+header .sticky {
+  border-bottom: 0.1rem solid rgba(255, 69, 0, 0.7);
 }
-
 
 span {
   font-size: 25px;
@@ -61,13 +60,12 @@ span {
   transition: 0.3s;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   color: #ff4500;
 }
 .navbar a.active {
   color: #ff4500;
 }
-
 
 .home {
   height: 100vh;
@@ -104,7 +102,6 @@ span {
   position: relative;
   overflow: hidden;
   z-index: 1;
-
 }
 
 .redes a::before {
@@ -135,14 +132,13 @@ span {
 .home-img {
   position: relative;
   margin-left: 180px;
-  
 }
 
 .home-img img {
   position: relative;
   top: -20px;
   left: -20px;
-  transition: .3s;
+  transition: 0.3s;
   max-width: 100%;
   width: 300px;
   height: auto;
@@ -150,15 +146,15 @@ span {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 5);
 }
 
-.home-img:hover img{
+.home-img:hover img {
   top: 0;
   left: 0;
 }
 
-.meu{
-  background-image: url('./imagem/ipad-air-2022-stock-blue-background-dark-mode-3840x2160-7904.jpg');
-height: 100vh;
-background-size: cover;
+.meu {
+  background-image: url("./imagem/ipad-air-2022-stock-blue-background-dark-mode-3840x2160-7904.jpg");
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -172,29 +168,32 @@ background-size: cover;
   padding-bottom: 10px; /* Reduzi drasticamente o padding inferior */
 }
 
-.meu .sebre h2 { /* Ou .titulo-secao */
+.meu .sebre h2 {
+  /* Ou .titulo-secao */
   position: relative; /* Necessário para posicionar o ::after */
   padding-bottom: 10px; /* Espaço para a linha */
 }
 
-.meu .sebre h2::after { /* Ou .titulo-secao::after */
-  content: ''; /* Obrigatório para pseudo-elementos */
+.meu .sebre h2::after {
+  /* Ou .titulo-secao::after */
+  content: ""; /* Obrigatório para pseudo-elementos */
   position: absolute;
   left: 0;
   bottom: 0;
   width: 160px; /* Ajuste o comprimento da linha */
   height: 3px; /* Ajuste a espessura da linha */
-  background-color: #FF4500; /* Cor laranja (você pode usar #FF4500 se preferir o tom da sua imagem) */
+  background-color: #ff4500; /* Cor laranja (você pode usar #FF4500 se preferir o tom da sua imagem) */
   border-radius: 2px; /* Opcional: para deixar as bordas da linha um pouco arredondadas */
 }
 
 /* Para adicionar os pontos (uma abordagem simples é com outro pseudo-elemento ou estilizando o texto) */
-.meu .sebre h2::before { /* Ou .titulo-secao::before */
-  content: '. . .';
+.meu .sebre h2::before {
+  /* Ou .titulo-secao::before */
+  content: ". . .";
   position: absolute;
   left: 170px; /* Ajuste a posição dos pontos */
   bottom: -15px; /* Ajuste a posição vertical dos pontos */
-  color: #FF4500; /* Cor dos pontos */
+  color: #ff4500; /* Cor dos pontos */
   font-size: 0.6em; /* Ajuste o tamanho dos pontos */
 }
 
@@ -206,7 +205,7 @@ background-size: cover;
 
 .services {
   padding: 60px 20px;
-  background-image: url('./imagem/macbook-pro-apple-m1-multicolor-pink-glossy-stock-5k-3840x2160-4039 (1) (1).jpg');
+  background-image: url("./imagem/macbook-pro-apple-m1-multicolor-pink-glossy-stock-5k-3840x2160-4039 (1) (1).jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -236,10 +235,8 @@ background-size: cover;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
   max-width: 380px;
-  border-top: 5px solid #FF4500;
-  border-bottom: 5px solid #FF4500;
-
-  
+  border-top: 5px solid #ff4500;
+  border-bottom: 5px solid #ff4500;
 }
 
 .services-box:hover {
@@ -249,7 +246,7 @@ background-size: cover;
 
 .services-box i {
   font-size: 4rem;
-  color: #FF4500;
+  color: #ff4500;
   margin-bottom: 15px;
 }
 
@@ -267,119 +264,161 @@ background-size: cover;
 
 /* Estilo para a seção de portfólio */
 
-.portfolio{
+.portfolio {
   background-image: url(./imagem/ipad-air-2022-stock-blue-background-dark-mode-3840x2160-7904.jpg);
-background-size: cover;
+  background-size: cover;
   background-position: center;
   color: #fff;
   padding: 3rem 0;
   width: 100%;
 }
 
-.portfolio h2{
+.portfolio h2 {
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 5% 60px; /* Padding responsivo */
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  justify-items: center; /* Centraliza os itens dentro das células */
 }
 
-/* Estilo para cada box do portfólio */
+/* Cards Modernos */
 .portfolio-box {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  width: 100%; /* Ocupa toda a célula do grid */
+  max-width: 380px; /* Largura máxima consistente */
+  height: 100%; /* Altura uniforme */
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-box:hover {
-  transform: scale(1.03);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo para as imagens dentro das caixas */
-.portfolio-box img {
-  width: 100%;
-  height: 250px; /* Altura fixa para todas as imagens */
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.portfolio-box:hover img {
-  transform: scale(1.1);
-}
-
-/* Estilo para a camada de sobreposição com texto */
-.portfolio-layer {
+.portfolio-box::before {
+  content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    to bottom,
-    rgba(255, 69, 0, 0),
-    rgba(255, 69, 0, 0.9) 50%,
-    rgba(255, 69, 0, 0.9)
+    135deg,
+    rgba(110, 72, 170, 0.1) 0%,
+    rgba(157, 80, 187, 0.05) 100%
   );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 4rem;
+  z-index: -1;
   opacity: 0;
-  transition: transform 0.5s ease, opacity 0.3s ease;
-  transform: translateY(100%);
+  transition: opacity 0.3s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.portfolio-box:hover::before {
   opacity: 1;
-  transform: translateY(0);
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-layer {
+  padding: 20px;
+  flex-grow: 1; /* Faz o conteúdo ocupar espaço igual */
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-layer h4 {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
 .portfolio-layer p {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
+  color: #ccc;
+  line-height: 1.5;
+  flex-grow: 1; /* Textos ocupam espaço igual */
   margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita a 3 linhas */
+  -webkit-box-orient: vertical;
 }
 
 .portfolio-layer a {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  background: #fff;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #6e48aa, #9d50bb);
+  color: white;
   border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio-layer a:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 5px 15px rgba(110, 72, 170, 0.3);
 }
 
 .portfolio-layer a i {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.2rem;
+}
+
+/* Efeito de brilho que segue o mouse */
+.portfolio-box {
+  --x: 0;
+  --y: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    rgba(255, 255, 255, 0.3),
+    transparent 70%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-box:hover::after {
+  opacity: 1;
 }
 
 .contact {
   min-height: 100vh;
   padding: 80px 5%;
-  background-image: url('./imagem/macbook-pro-apple-m1-multicolor-pink-glossy-stock-5k-3840x2160-4039 (1) (1).jpg');
-height: 100vh;
-background-size: cover;
+  background-image: url("./imagem/macbook-pro-apple-m1-multicolor-pink-glossy-stock-5k-3840x2160-4039 (1) (1).jpg");
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
@@ -395,8 +434,6 @@ background-size: cover;
   margin-bottom: 60px;
   font-weight: 700;
 }
-
-
 
 .contact form {
   max-width: 800px;
@@ -475,11 +512,9 @@ background-size: cover;
   color: #ff4500;
 }
 
-
-
 /* Responsividade */
 
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1180px) {
   .meu .sebre h2::before {
     left: calc(12% + 85px);
     bottom: -15px;
@@ -493,36 +528,36 @@ background-size: cover;
     text-align: center;
     padding-top: 150px;
   }
-  
+
   .home-img {
     margin-left: 0;
     margin-top: 50px;
   }
-  
+
   .services-conteiner {
     grid-template-columns: 1fr;
     max-width: 500px;
   }
-  
+
   .services-box {
     max-width: 100%;
   }
-  
+
   .meu {
     text-align: center;
     padding: 0 5%;
   }
-  
+
   .meu .sebre h2::after {
     left: 19%;
     transform: translateX(-50%);
   }
-  
+
   .meu .sebre h2::before {
     left: calc(20% + 85px);
     bottom: -10px;
   }
-  
+
   .input-box {
     flex-direction: column;
     gap: 15px;
@@ -542,8 +577,6 @@ background-size: cover;
   }
 }
 
-
-
 /* Dispositivos pequenos (celulares, até 768px) */
 @media screen and (max-width: 768px) {
   header {
@@ -552,53 +585,54 @@ background-size: cover;
     padding: 10px 15px;
     flex-direction: column;
   }
-  
+
   header span {
     margin-bottom: 10px;
   }
-  
+
   .navbar {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   .navbar a {
     margin: 5px 10px;
     font-size: 14px;
   }
-  
+
   .home-content h1 {
     font-size: 28px;
     margin-top: 30%;
   }
-  
+
   .home-content h3 {
     font-size: 24px;
   }
-  
+
   .home-img img {
     width: 250px;
   }
-  
+
   .meu .sebre h2 {
     font-size: 2.5em;
   }
-  
+
   .meu .sebre p {
     font-size: 1.2em;
   }
-  
-  
-  .portfolio h2, .meus-services h2, .contact h2 {
+
+  .portfolio h2,
+  .meus-services h2,
+  .contact h2 {
     font-size: 2.5rem;
   }
-  
+
   .contact {
     padding: 60px 3%;
   }
-  
+
   .portfolio-box {
     max-width: 90%;
   }
@@ -609,20 +643,20 @@ background-size: cover;
   header {
     top: 10px;
   }
-  
+
   .navbar a {
     margin: 5px 8px;
     font-size: 12px;
   }
-  
+
   .home-content h1 {
     font-size: 24px;
   }
-  
+
   .home-content h3 {
     font-size: 20px;
   }
-  
+
   .home-img img {
     width: 200px;
   }
@@ -634,50 +668,52 @@ background-size: cover;
 
   .meu .sebre h2::before {
     left: calc(24% + 83px);
-    bottom: -10px;
+    bottom: -13px;
   }
-  
+
   .redes a {
     width: 35px;
     height: 35px;
     font-size: 18px;
     margin: 20px 10px 20px 0;
   }
-  
+
   .meu .sebre h2 {
     font-size: 3em;
   }
-  
+
   .meu .sebre p {
     font-size: 1em;
   }
-  
+
   .services-box {
     padding: 20px 25px;
   }
-  
+
   .services-box i {
     font-size: 3rem;
   }
-  
+
   .services-box h3 {
     font-size: 1.2rem;
   }
-  
-  .portfolio h2, .meus-services h2, .contact h2 {
+
+  .portfolio h2,
+  .meus-services h2,
+  .contact h2 {
     font-size: 2rem;
     margin-bottom: 30px;
   }
-  
+
   .contact textarea {
     height: 180px;
   }
-  
+
   .contact .btn {
     padding: 12px 25px;
     font-size: 0.9rem;
   }
-  
+
   .portfolio-box {
     max-width: 100%;
   }
@@ -708,14 +744,14 @@ background-size: cover;
     top: 10px;
     right: 20px;
   }
-  
+
   header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
   }
-  
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -733,13 +769,13 @@ background-size: cover;
     opacity: 0;
     visibility: hidden;
   }
-  
+
   .navbar.active {
     max-height: 300px;
     opacity: 1;
     visibility: visible;
   }
-  
+
   .navbar a {
     display: block;
     margin: 30px 20px;
@@ -767,7 +803,6 @@ background-size: cover;
   font-weight: 800;
 }
 
-<<<<<<< HEAD
 /* OBRIGADO */
 .obrigado {
   min-height: 100vh;
@@ -789,8 +824,6 @@ background-size: cover;
   font-weight: 800;
 }
 
-=======
->>>>>>> 37ffda5773cbae740ba81431b1721b29887033f4
 .obrigado p {
   font-size: 1.5rem;
   margin-bottom: 40px;
@@ -827,5 +860,17 @@ background-size: cover;
   .obrigado .btn {
     font-size: 1rem;
     padding: 10px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
   }
 }
