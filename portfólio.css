@@ -169,32 +169,35 @@ span {
 }
 
 .meu .sebre h2 {
-  /* Ou .titulo-secao */
-  position: relative; /* Necessário para posicionar o ::after */
-  padding-bottom: 10px; /* Espaço para a linha */
+  position: relative;
+  display: inline-block; /* Faz a linha acompanhar o tamanho do texto */
+  padding-bottom: 15px; /* Espaço para os elementos decorativos */
 }
 
+/* Linha - Ajuste fino de posicionamento */
 .meu .sebre h2::after {
-  /* Ou .titulo-secao::after */
-  content: ""; /* Obrigatório para pseudo-elementos */
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 160px; /* Ajuste o comprimento da linha */
-  height: 3px; /* Ajuste a espessura da linha */
-  background-color: #ff4500; /* Cor laranja (você pode usar #FF4500 se preferir o tom da sua imagem) */
-  border-radius: 2px; /* Opcional: para deixar as bordas da linha um pouco arredondadas */
+  width: 160px;
+  height: 3px;
+  background-color: #ff4500;
+  border-radius: 2px;
+  transform: translateY(5px); /* Ajuste vertical sutil */
 }
 
-/* Para adicionar os pontos (uma abordagem simples é com outro pseudo-elemento ou estilizando o texto) */
+/* Pontinhos - Alinhamento perfeito com a linha */
 .meu .sebre h2::before {
-  /* Ou .titulo-secao::before */
-  content: ". . .";
+  content: "...";
   position: absolute;
-  left: 170px; /* Ajuste a posição dos pontos */
-  bottom: -12px; /* Ajuste a posição vertical dos pontos */
-  color: #ff4500; /* Cor dos pontos */
-  font-size: 0.6em; /* Ajuste o tamanho dos pontos */
+  left: 165px; /* Alinhamento com o final da linha */
+  bottom: 2px;
+  color: #ff4500;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 0;
+  
 }
 
 .meu .sebre p {
@@ -518,8 +521,8 @@ span {
 
 @media screen and (max-width: 1180px) {
   .meu .sebre h2::before {
-    left: calc(12% + 85px);
-    bottom: -15px;
+    left: calc(12% + 130px);
+    bottom: 2px;
   }
 }
 
@@ -557,7 +560,7 @@ span {
 
   .meu .sebre h2::before {
     left: calc(20% + 85px);
-    bottom: -10px;
+    bottom: 7.2px;
   }
 
   .input-box {
@@ -571,6 +574,12 @@ span {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .home{
+    height: auto;
+    padding-bottom: 40%;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -670,7 +679,7 @@ span {
 
   .meu .sebre h2::before {
     left: calc(24% + 83px);
-    bottom: -13px;
+    bottom: 7.2px;
   }
 
   .redes a {
